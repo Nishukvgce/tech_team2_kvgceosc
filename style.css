@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Dopestyle';
+    src: url('greeshma/tech_team2_kvgceosc/font');
+}
+
+.container{
+    background-image: url('img/back.jpg');
+    background-color: rgba(0, 0, 0, 0.473);
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    mask-image: linear-gradient(black , transparent);
+    -webkit-mask-image: linear-gradient(black 80%,transparent 100%);
+    background-blend-mode: multiply;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 100px;
+    background-color: #00000096;
+    backdrop-filter: blur(3px);
+}
+.logo {
+    font-size: 5vh;
+    padding-top: 15px;
+    font-family: 'Dopestyle';
+    font-weight: 500;
+}
+.logo span{
+    color: orange;
+}
+.logo a{
+    text-decoration: none;
+    color: #ffff;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding-top: 20px;
+    margin: 0 45px;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: "sen";
+    font-size: 18px;
+    transition: color 0.3s ease;
+} 
+.menu a:hover{
+    color: orange;
+}
+.maintxt{
+    height: calc(12px - 100vh);
+}
+.maintxt h1{
+    color: #ffff;
+    text-align: center;
+    font-family: 'Instrument Sans';
+    padding-top: 150px;
+}
+.maintxt h1 span{
+    color: orange;
+}
+
+.input-box {
+    position: relative;
+    height: 45px;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    margin: 40px 300px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+}
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 0px;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+}
+.input-box .button {
+    right: 10px;
+    font-weight: 400;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 50px;
+    background-color: orange; 
+    cursor: pointer;
+}
+.button i{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* main-menu */
+.main-menu{
+    width: 100%;
+    height: 110vh;
+}
+.main-menu h3{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Instrument Sans";
+}
+.main-card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2 ,-1fr);
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 200px;
+    gap: 30px;
+}
+
+.rectangle {
+    width: 400px; 
+    height: 270px;
+    /* align-items: center;
+    justify-content: center; */
+    border: 2px solid #707070;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+}
+.rect-left{
+    width: 130px;
+    height: 270px;
+}
+.rect-right{
+    width: calc(400px - 130px);
+    height: 270px;
+}
+.circle{
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    margin-left: -100px;
+    margin-top: 30px;
+}
+.circle img{
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    align-items: center;
+}
+.rect-right h2{
+    padding-top: 40px;
+}
+.list{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.list li{
+    line-height: 20px;
+    font-family: "Sen";
+    list-style: circle;
+}
+.rect-right button{
+    width: 90px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border:2px solid orange;
+    border-radius: 5px;
+    background-color: transparent;
+    letter-spacing: .5px;
+}
+.rect-right button:hover{
+    border:2px solid orange;
+    background-color: orange;
+}
+.rect-right button a:hover{
+    color: #fff;
+}
+.rect-right button a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* contact */
+
+.main-contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.cont-left{
+    width: 50%;
+    height: 100%;
+}
+.cont-right{
+    width: 50%;
+    height: 100%;
+}
+.contact-txt h2{
+    font-family: "Sen";
+    padding-top: 100px;
+    padding-left: 150px;
+    font-size: 40px;
+}
+.contact-txt hr{
+    width: 150px;
+    height: 5px;
+    border: none;
+    background-color: orange;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: 155px;
+}
+form {
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+input , textarea , button{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+input{
+    width: 70%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1em;
+    font-family: "Open Sans";
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+textarea{
+    width: 70%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    font-family: "Open Sans";
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+form button {
+    width: 25%;
+    padding: 10px;
+    font-size: 1em;
+    font-family: "sen";
+    color: black;
+    background-color: transparent;
+    border: 2px solid orange;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+textarea::placeholder{
+    font-family: "Open Sans";
+}
+
+form button:hover {
+    background-color: orange;
+    color: #ffffff;
+}
+.cont-right img{
+    width: 350px;
+    height: 400px;
+    margin-top: 120px;
+    margin-left: 80px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 35vh;
+    background-color: #666;
+    font-family: "Open Sans";
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.foot-left{
+    width: 40%;
+    height: 27vh;
+    list-style: none;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+.foot-left a{
+    padding-left: 10px;
+    color: #fff;
+}
+.foot-right{
+    width: 60%;
+    height: 27vh;
+    padding-left: 70px;
+    padding-top: 30px;
+    color: #fff;
+}
+.foot-right h5{
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.foot-right a{
+    color: rgb(0, 0, 0);
+}
+.last-txt{
+    width: 100%;
+    margin-left: 400px;
+    line-height: 12px;
+}
+.last-txt span{
+    padding-left: 100px;
+}
+.last-txt a{
+    color: black;
+}
+
+
+footer h4{
+    font-size: 20px;
+}
+
+
+
+
+
